@@ -14,4 +14,12 @@ export class UserEntity {
   cpf: string;
   @Column({ name: 'password', nullable: false })
   password: string;
+  @Column({ name: 'TypeUser', nullable: false })
+  typeUser: number;
+
+  @Column({ name: 'createdAt' })
+  createdAt: Date;
+
+  @Column({ name: 'updatedAt' })
+  updateAt: Date;
 }
