@@ -8,9 +8,9 @@ export class StateEntity {
   @Column({ name: 'name', nullable: false })
   name: string;
 
-  @Column({ name: 'createdAt' })
+  @Column({ name: 'created_at' })
   createdAt: Date;
 
-  @Column({ name: 'updatedAt' })
+  @Column({ name: 'updated_at' })
   updateAt: Date;
 }
