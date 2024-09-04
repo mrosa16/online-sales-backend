@@ -15,9 +15,9 @@ export class AddressEntity {
   @Column({ name: 'city_id', nullable: false })
   cityId: number;
 
-  @Column({ name: 'createdAt' })
+  @Column({ name: 'created_at' })
   createdAt: Date;
 
-  @Column({ name: 'updatedAt' })
+  @Column({ name: 'updated_at' })
   updateAt: Date;
 }
