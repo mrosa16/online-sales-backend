@@ -16,7 +16,7 @@ export class UserService {
     private readonly UserRepository: Repository<UserEntity>,
   ) {}
 
-  async CreateUser(createUserDto: CreateUserDto): Promise<UserEntity> {
+  async createUser(createUserDto: CreateUserDto): Promise<UserEntity> {
     const user = await this.findUserByEmail(createUserDto.email).catch(
       () => undefined,
     );
