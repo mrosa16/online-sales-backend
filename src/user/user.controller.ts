@@ -19,7 +19,7 @@ export class UserController {
   @UsePipes(ValidationPipe)
   @Post()
   async creteUser(@Body() createUser: CreateUserDto): Promise<UserEntity> {
-    return this.userService.CreateUser(createUser);
+    return this.userService.createUser(createUser);
   }
 
   @Get()
